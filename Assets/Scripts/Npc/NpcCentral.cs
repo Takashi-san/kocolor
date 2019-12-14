@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NpcCentral : MonoBehaviour {
-	bool _convinced;
+	[SerializeField] bool _convinced = false;
+	[SerializeField] bool _repeled = false;
 
 	public void SetConvinced(bool isIt) {
 		_convinced = isIt;
@@ -11,5 +12,13 @@ public class NpcCentral : MonoBehaviour {
 
 	public bool GetConvinced() {
 		return _convinced;
+	}
+
+	public void SetRepeled(bool isIt) {
+		_repeled = isIt;
+	}
+
+	public bool GetRepeled() {
+		return _repeled;
 	}
 }
