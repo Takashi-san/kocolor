@@ -17,6 +17,7 @@ public class PlayerWalk : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		_rb.velocity = (Vector2.up * _inputManager.GetVertical() + Vector2.right * _inputManager.GetHorizontal()) * _velocity;
+		Vector2 movementVelocity = new Vector2(_inputManager.GetHorizontal() * _velocity, _rb.velocity.y);
+		_rb.velocity = movementVelocity;
 	}
 }
