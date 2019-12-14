@@ -131,8 +131,8 @@ GameObject:
   - component: {fileID: 421243935}
   - component: {fileID: 421243934}
   - component: {fileID: 421243936}
-  - component: {fileID: 421243937}
   - component: {fileID: 421243938}
+  - component: {fileID: 421243937}
   - component: {fileID: 421243939}
   m_Layer: 8
   m_Name: You
@@ -626,7 +626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fc3781709346df46b6f0d03d237a5c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _velocity: 3.5
+  _velocity: 4
   _offset: 1.5
   _repeledModifier: 0.3
   _repeledTime: 0.75
@@ -642,6 +642,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79d96fa5c2a52bb46ad426d76483be2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _convinced: 0
+  _repeled: 0
 --- !u!1001 &4417943368491915406
 PrefabInstance:
   m_ObjectHideFlags: 0
