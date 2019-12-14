@@ -14,6 +14,9 @@ public class PlayerWalk : MonoBehaviour {
 		}
 
 		_inputManager = FindObjectOfType<InputManager>().GetComponent<InputManager>();
+		if (!_inputManager) {
+			Debug.Log("No InputManager found!");
+		}
 	}
 
 	void FixedUpdate() {
