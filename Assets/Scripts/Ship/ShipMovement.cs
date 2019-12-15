@@ -6,6 +6,8 @@ public class ShipMovement : MonoBehaviour {
 	Rigidbody2D _rb;
 	InputManager _inputManager;
 	[SerializeField] float _force = 0;
+	[SerializeField] float _deadForce = 0;
+	bool _died = false;
 
 	void Start() {
 		_rb = gameObject.GetComponent<Rigidbody2D>();
@@ -20,7 +22,17 @@ public class ShipMovement : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		Vector2 movementForce = new Vector2(_inputManager.GetHorizontal(), _inputManager.GetVertical()) * _force;
-		_rb.AddForce(movementForce);
+		if (!_died) {
+			Vector2 movementForce = new Vector2(_inputManager.GetHorizontal(), _inputManager.GetVertical()) * _force;
+			_rb.AddForce(movementForce);
+		}
+	}
+
+	public void Died() {
+		_died = true;
+		_rb.constraints = RigidbodyConstraints2D.None;
+		_rb.AddForce(Vector2.up * _deadForce, ForceMode2D.Impulse);
+		_rb.AddTorque(_deadForce);
+		_rb.gravityScale = 3;
 	}
 }

@@ -29,6 +29,8 @@ public class NpcFollowPlayer : MonoBehaviour {
 		if (!_player) {
 			Debug.Log("No Player in scene!");
 		}
+
+		_offset += Random.Range(0, 4);
 	}
 
 	void FixedUpdate() {
