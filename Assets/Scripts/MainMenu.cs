@@ -6,8 +6,10 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
 
+    public Animator animator;
+
     public void PlayGame(){
-        SceneManager.LoadScene("convert");
+        animator.SetTrigger("FadeOut");
     }
 
     public void QuitGame(){
