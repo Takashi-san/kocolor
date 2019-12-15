@@ -52,4 +52,8 @@ public class ShipHealth : MonoBehaviour {
 			_hp = _maxHp;
 		}
 	}
+
+	public int GetHealth() {
+		return _hp;
+	}
 }

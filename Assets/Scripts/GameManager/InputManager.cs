@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour {
 	float _horizontal, _vertical;
-	bool _interact;
+	bool _interact, _go;
 
 	// Em Edit >> Project Settings... >> Script Execution Order, foi colocado para ser executado antes de todos.
 	void Update() {
@@ -15,6 +15,7 @@ public class InputManager : MonoBehaviour {
 		_vertical = Input.GetAxis("Vertical");
 
 		_interact = Input.GetKeyDown(KeyCode.E);
+		_go = Input.GetKeyDown(KeyCode.Q);
 	}
 
 	public float GetHorizontal() {
@@ -27,5 +28,9 @@ public class InputManager : MonoBehaviour {
 
 	public bool GetInteract() {
 		return _interact;
+	}
+
+	public bool GetGo() {
+		return _go;
 	}
 }
