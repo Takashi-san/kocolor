@@ -16,6 +16,7 @@ public class TimeToDie : MonoBehaviour {
 		if ((_timer > _surviveTime) && _once) {
 			StartCoroutine(rain(_projectile, 0, 0.1f, 0.5f));
 			FindObjectOfType<DeathZone>().win = true;
+			FindObjectOfType<SpawnManager>().gameObject.SetActive(false);
 			_once = false;
 		}
 	}

@@ -130,7 +130,7 @@ PrefabInstance:
     - target: {fileID: -1940641530443738105, guid: 5a82838d0c61c4945994d7abd17bf84b,
         type: 3}
       propertyPath: _firstScene
-      value: Convert
+      value: Menu
       objectReference: {fileID: 0}
     - target: {fileID: 3006407090367510890, guid: 5a82838d0c61c4945994d7abd17bf84b,
         type: 3}
