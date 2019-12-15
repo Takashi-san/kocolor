@@ -16,6 +16,10 @@ public class ProjectileDown : MonoBehaviour {
 
 	void FixedUpdate() {
 		_rb.velocity = new Vector2(_rb.velocity.x, -_velocity);
+
+		if (transform.position.y < -15) {
+			Destroy(gameObject);
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
