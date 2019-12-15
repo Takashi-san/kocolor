@@ -35,6 +35,9 @@ public class ShipHealth : MonoBehaviour {
 		if (_hp < 0) {
 			_hp = 0;
 		}
+		if (_hp == 0) {
+			GetComponent<ShipMovement>().Died();
+		}
 
 		for (int i = _hp; i < 5; i++) {
 			if (_LifeBlobs[i]) {
