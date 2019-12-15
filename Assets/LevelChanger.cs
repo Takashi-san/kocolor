@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class LevelChanger : MonoBehaviour
 {
@@ -10,7 +9,4 @@ public class LevelChanger : MonoBehaviour
         animator.SetTrigger("FadeOut");
     }
 
-    public void OnLevelComplete(){
-        SceneManager.LoadScene("convert");
-    }
 }
