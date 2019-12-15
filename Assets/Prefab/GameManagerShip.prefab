@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7430983566315990177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1313085932512107615}
+  - component: {fileID: 449967530388838537}
+  - component: {fileID: 4287958885293122871}
+  m_Layer: 0
+  m_Name: GameManagerShip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1313085932512107615
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7430983566315990177}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &449967530388838537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7430983566315990177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b948ef60a36eb459bdd53b0ba0e83b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4287958885293122871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7430983566315990177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cc29d63c77424c4e8534f971b050646, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _projectileWave: {fileID: 3792194383842499727, guid: e3adda3a374cc3d43bb9c426be2d3129,
+    type: 3}
+  _projectileStraight: {fileID: 310692135374066365, guid: 256950e29baa7744f9acd2d7e388ef7c,
+    type: 3}
+  _projectileSine: {fileID: 1874055791575702510, guid: c03dbda9caa2af647af74cb8302624a4,
+    type: 3}
+  _projectileFollow: {fileID: 7535585123184057822, guid: b0bb30b101fac444b9c03eb4fd31ddfc,
+    type: 3}
+  _num: 00000000000000000000000000000000
+  _min:
+  - 0
+  - 0
+  - 0
+  - 0
+  _max:
+  - 0
+  - 0
+  - 0
+  - 0
