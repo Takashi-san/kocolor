@@ -161,7 +161,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _response: {fileID: 7529390947534926542, guid: b3d571567c442f94985a954051c31a05,
     type: 3}
-  _convertionChance: 20
+  _convertionChance: -1
+  _reveal: {fileID: 0}
 --- !u!114 &5271017578029327276
 MonoBehaviour:
   m_ObjectHideFlags: 0
