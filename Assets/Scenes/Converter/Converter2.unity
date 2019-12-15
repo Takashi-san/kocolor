@@ -1423,6 +1423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 952833556}
   menu: {fileID: 102900000, guid: a00064dd37ad3a7418893a03cb79ae00, type: 3}
+  animator: {fileID: 0}
 --- !u!82 &596371768
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2443,7 +2444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06b75729b6d01b647b4cd5e165d0b08f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cena: Ascencion
+  _cena: Chip2
   _condition: 4
 --- !u!1 &1095978307
 GameObject:
