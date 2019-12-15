@@ -8,6 +8,8 @@ public class PlayerWalk : MonoBehaviour {
 	[SerializeField] Animator _animator;
 	[SerializeField] SpriteRenderer _spriteR;
 	[SerializeField] float _velocity = 0;
+	GameData _gameData;
+	[SerializeField] int _inicialHp = 0;
 
 	void Start() {
 		_rb = gameObject.GetComponent<Rigidbody2D>();
@@ -19,6 +21,9 @@ public class PlayerWalk : MonoBehaviour {
 		if (!_inputManager) {
 			Debug.Log("No InputManager found!");
 		}
+
+		_gameData = FindObjectOfType<GameData>().GetComponent<GameData>();
+		_gameData.hp = _inicialHp;
 	}
 
 	void FixedUpdate() {

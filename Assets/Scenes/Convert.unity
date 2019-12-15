@@ -2375,7 +2375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cena: Ascencion
-  _condition: 1
+  _condition: 2
 --- !u!1 &1095978307
 GameObject:
   m_ObjectHideFlags: 0
@@ -4198,6 +4198,11 @@ PrefabInstance:
     - target: {fileID: 814487880443630671, guid: 0617e3b57136a9447b1dafa2275556bf,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 814487880443630705, guid: 0617e3b57136a9447b1dafa2275556bf,
+        type: 3}
+      propertyPath: _inicialHp
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
