@@ -7,8 +7,11 @@ public class ShipHealth : MonoBehaviour {
 	[SerializeField] int _maxHp = 5;
 	[SerializeField] GameObject[] _blobs = new GameObject[5];
 	GameObject[] _LifeBlobs = new GameObject[5];
+	GameData _gameData;
 
 	void Start() {
+		_gameData = FindObjectOfType<GameData>().GetComponent<GameData>();
+		_maxHp = _gameData.hp;
 		_hp = _maxHp;
 
 		switch (_maxHp) {

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NpcConvertion : MonoBehaviour {
 	InputManager _inputManager;
+	GameData _gameData;
 	[SerializeField] GameObject _response;
 	[Range(-1, 100)] [SerializeField] float _convertionChance = 0;
 	[SerializeField] GameObject _reveal;
@@ -24,6 +25,7 @@ public class NpcConvertion : MonoBehaviour {
 			GameObject response = Instantiate(_response, transform.position, Quaternion.identity);
 			response.transform.parent = transform;
 		}
+		_gameData = FindObjectOfType<GameData>().GetComponent<GameData>();
 	}
 
 	public void Update() {
@@ -39,6 +41,7 @@ public class NpcConvertion : MonoBehaviour {
 		if (!_npcCentral.GetConvinced()) {
 			if (Random.Range(0, 100) < _convertionChance) {
 				if (!_npcCentral.GetRepeled()) {
+					_gameData.hp++;
 					GameObject response = Instantiate(_response, transform.position, Quaternion.identity);
 					response.transform.parent = transform;
 					_npcCentral.SetConvinced(true);
