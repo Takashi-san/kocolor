@@ -8,6 +8,7 @@ public class Blobs : MonoBehaviour {
 	[SerializeField] float _velocity = 0;
 	[SerializeField] int _order = 0;
 	[SerializeField] float _offset = 0;
+	[SerializeField] GameObject _explosion;
 
 	void Start() {
 		_player = FindObjectOfType<ShipMovement>().gameObject;
@@ -22,5 +23,10 @@ public class Blobs : MonoBehaviour {
 		else {
 			_rb.velocity *= 0.5f;
 		}
+	}
+
+	public void Die() {
+		Instantiate(_explosion, transform.position, Quaternion.identity);
+		Destroy(gameObject);
 	}
 }

@@ -137,5 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _velocity: 4.5
-  _order: 5
+  _order: 2
   _offset: 0.35
+  _explosion: {fileID: 8194315078139641568, guid: 6c396d0cf5ce9b5469fb626c19e722ec,
+    type: 3}

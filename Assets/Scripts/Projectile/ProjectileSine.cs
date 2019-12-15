@@ -28,6 +28,11 @@ public class ProjectileSine : MonoBehaviour {
 			_timer -= _sinePeriod;
 		}
 		_rb.velocity = new Vector2(Mathf.Sin(2 * Mathf.PI * (_timer / _sinePeriod)) * _velocitySine, -_velocity);
+
+
+		if (transform.position.y < -15) {
+			Destroy(gameObject);
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
