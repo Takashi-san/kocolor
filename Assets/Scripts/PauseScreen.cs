@@ -9,6 +9,7 @@ public class PauseScreen : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
     public Object menu;
+    public Animator animator;
 
     // Update is called once per frame
     void Update()
@@ -35,7 +36,7 @@ public class PauseScreen : MonoBehaviour
     }
 
     public void LoadMenu(){
-        SceneManager.LoadScene(menu.name);
+        animator.SetTrigger("FadeOut");
     }
 
     public void QuitGame(){
