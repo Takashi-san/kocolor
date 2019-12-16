@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/_GameManager.unity
+    guid: 21227bbc0e2255647be5bd8c5d3a9c71
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: a00064dd37ad3a7418893a03cb79ae00
   - enabled: 1
@@ -14,4 +17,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ascencion.unity
     guid: 872883dadb9aa1c43b4c3aee38de25c7
+  - enabled: 1
+    path: Assets/Scenes/Converter/Converter0.unity
+    guid: bb1509d210bb401468a5351981ef1fc0
+  - enabled: 1
+    path: Assets/Scenes/Converter/Converter1.unity
+    guid: a06e70776dcab484ebfda70352e4823b
+  - enabled: 1
+    path: Assets/Scenes/Converter/Converter2.unity
+    guid: 96be9ba3d9ee3e74ab41cebd0b0d9d6f
+  - enabled: 1
+    path: Assets/Scenes/Converter/Converter3.unity
+    guid: 5dcb45ac461969a4ab4d3cca839ed937
+  - enabled: 1
+    path: Assets/Scenes/Ship/Chip0.unity
+    guid: 8a343400d0773c04f906e461b4f93b75
+  - enabled: 1
+    path: Assets/Scenes/Ship/Chip1.unity
+    guid: fca4f0190bcf30f48bc6533718f02550
+  - enabled: 1
+    path: Assets/Scenes/Ship/Chip2.unity
+    guid: a73675c9fa5028347ae458f5ba7fdf9c
+  - enabled: 1
+    path: Assets/Scenes/Ship/Chip3.unity
+    guid: fba4179c96d236549b9bdfb0ca70b1a0
+  - enabled: 1
+    path: Assets/Scenes/Fim.unity
+    guid: c3420bca28853664498594be5dc3e5ef
   m_configObjects: {}
