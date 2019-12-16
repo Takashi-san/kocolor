@@ -8,6 +8,7 @@ public class GoToShip : MonoBehaviour {
 	GameData _gameData;
 	[SerializeField] string _cena;
 	[SerializeField] int _condition;
+	[SerializeField] GameObject ascend;
 
 	void Start() {
 		_stageManager = FindObjectOfType<StageManager>().GetComponent<StageManager>();
@@ -19,6 +20,11 @@ public class GoToShip : MonoBehaviour {
 	}
 
 	void Update() {
+		if (_gameData.hp == _condition) {
+			if (ascend) {
+				ascend.SetActive(true);
+			}
+		}
 		if (_inputManager.GetGo()) {
 			if (_gameData.hp == _condition) {
 				_stageManager.ChangeScene(_cena);

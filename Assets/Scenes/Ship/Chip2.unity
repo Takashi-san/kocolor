@@ -219,6 +219,7 @@ MonoBehaviour:
   _cena: Converter2
   _cenaWin: Converter3
   win: 0
+  fim: 0
 --- !u!61 &166013515
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1816,6 +1817,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 977899450}
   menu: {fileID: 102900000, guid: a00064dd37ad3a7418893a03cb79ae00, type: 3}
+  animator: {fileID: 0}
 --- !u!82 &1972210422
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1828,7 +1830,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 305d1f600f046b14a8fea654eedbc16c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 1
   Mute: 0
